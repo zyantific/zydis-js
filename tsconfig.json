@@ -16,7 +16,8 @@
 		"experimentalDecorators": true,
 		"useDefineForClassFields": false
 	},
-	"exclude": ["./node_modules/**", "./dist/**/*"],
+	"exclude": ["./node_modules/**", "./dist/**/*", "./out/**/*"],
+	"include": ["./src"],
 	"ts-node": {
 		"swc": true,
 		"experimentalResolver": true,

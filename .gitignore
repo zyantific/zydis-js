@@ -4,6 +4,7 @@ package-lock.json
 yarn.lock
 dist
 build
+out
 .vscode
-src/*.mjs
+src/*.js
 src/*.wasm
