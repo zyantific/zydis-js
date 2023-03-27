@@ -25,4 +25,8 @@ target_link_options(zydis.js PRIVATE
 message(STATUS "Copying binaries...")   
 add_custom_command(TARGET zydis.js  POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_BINARY_DIR}/zydis.mjs  ${CMAKE_SOURCE_DIR}/src/zydis.mjs)
 add_custom_command(TARGET zydis.js  POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_BINARY_DIR}/zydis.wasm ${CMAKE_SOURCE_DIR}/src/zydis.wasm)
+add_custom_command(TARGET zydis.js  POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_BINARY_DIR}/zydis.mjs ${CMAKE_SOURCE_DIR}/dist/zydis.mjs)
 add_custom_command(TARGET zydis.js  POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_BINARY_DIR}/zydis.wasm ${CMAKE_SOURCE_DIR}/dist/zydis.wasm)
+add_custom_command(TARGET zydis.js  POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_SOURCE_DIR}/src/native.mjs ${CMAKE_SOURCE_DIR}/dist/native.mjs)
+add_custom_command(TARGET zydis.js  POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_SOURCE_DIR}/src/native.d.ts ${CMAKE_SOURCE_DIR}/dist/native.d.ts)
+add_custom_command(TARGET zydis.js  POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_SOURCE_DIR}/src/native.d.ts ${CMAKE_SOURCE_DIR}/dist/native.d.ts)
