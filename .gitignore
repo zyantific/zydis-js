@@ -5,3 +5,5 @@ yarn.lock
 dist
 build
 .vscode
+src/*.mjs
+src/*.wasm
