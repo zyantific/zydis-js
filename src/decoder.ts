@@ -1,4 +1,4 @@
-import { OperandImm, OperandMem, OperandPtr, OperandReg } from "./common";
+import { OperandImm, OperandMem, OperandPtr, OperandReg } from "./common.js";
 import {
 	BranchType,
 	BroadcastMode,
@@ -23,9 +23,9 @@ import {
 	RoundingMode,
 	StackWidth,
 	SwizzleMode,
-} from "./enums";
-import zydis from "./native";
-import { Resource, ZyjsField, withStack } from "./util";
+} from "./enums.js";
+import zydis from "./native.js";
+import { Resource, ZyjsField, withStack } from "./util.js";
 
 const OpField = ZyjsField("DecOp");
 export class DecodedOperand {

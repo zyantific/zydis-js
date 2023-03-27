@@ -1,6 +1,6 @@
-import { DecodedInsn } from "./decoder";
-import { Resource, ZyjsField, withHeap, withStack } from "./util";
-import zydis from "./native";
+import { DecodedInsn } from "./decoder.js";
+import { Resource, ZyjsField, withHeap, withStack } from "./util.js";
+import zydis from "./native.js";
 import {
 	AddressSizeHint,
 	BranchType,
@@ -17,8 +17,8 @@ import {
 	Register,
 	RoundingMode,
 	SwizzleMode,
-} from "./enums";
-import { OperandImm, OperandMem, OperandPtr, OperandReg } from "./common";
+} from "./enums.js";
+import { OperandImm, OperandMem, OperandPtr, OperandReg } from "./common.js";
 
 const OpField = ZyjsField("EncOp");
 

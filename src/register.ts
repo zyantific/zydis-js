@@ -1,5 +1,5 @@
-import { MachineMode, Register, RegisterClass } from "./enums";
-import zydis from "./native";
+import { MachineMode, Register, RegisterClass } from "./enums.js";
+import zydis from "./native.js";
 
 export function encode(cl: RegisterClass, id: number): Register {
 	const res = zydis.asm.zyjsRegisterEncode(cl, id);

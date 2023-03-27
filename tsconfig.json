@@ -12,15 +12,12 @@
 		"typeRoots": ["node_modules/@types", "./src"],
 		"sourceMap": true,
 		"skipLibCheck": true,
-		"moduleResolution": "node",
 		"experimentalDecorators": true,
 		"useDefineForClassFields": false
 	},
 	"exclude": ["./node_modules/**", "./dist/**/*", "./out/**/*"],
 	"include": ["./src"],
 	"ts-node": {
-		"swc": true,
-		"experimentalResolver": true,
-		"experimentalSpecifierResolution": "node"
+		"swc": true
 	}
 }

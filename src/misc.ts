@@ -1,5 +1,5 @@
-import { Feature } from "./enums";
-import zydis from "./native";
+import { Feature } from "./enums.js";
+import zydis from "./native.js";
 
 export function getVersion() {
 	return {

@@ -1,7 +1,7 @@
-import { FormatterProperty, FormatterStyle } from "./enums";
-import { HeapAllocator, Resource, withStack } from "./util";
-import zydis from "./native";
-import { DecodedInsn, DecodedOperand } from "./decoder";
+import { FormatterProperty, FormatterStyle } from "./enums.js";
+import { HeapAllocator, Resource, withStack } from "./util.js";
+import zydis from "./native.js";
+import { DecodedInsn, DecodedOperand } from "./decoder.js";
 
 const MAX_LENGTH = 512;
 export class Formatter {

@@ -1,4 +1,4 @@
-import zydis from "./native";
+import zydis from "./native.js";
 
 //
 // Low level details.

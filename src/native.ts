@@ -1,2 +1,2 @@
-import loadZydis from "./zydis";
+import loadZydis from "./zydis.js";
 export default await loadZydis();

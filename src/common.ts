@@ -1,4 +1,4 @@
-import type { MemoryOperandType, Register } from "./enums";
+import type { MemoryOperandType, Register } from "./enums.js";
 
 export type OperandImm = { s: bigint; rel?: boolean } | { u: bigint; rel?: boolean };
 

@@ -8,3 +8,4 @@ out
 .vscode
 src/*.js
 src/*.wasm
+zydis.min.js

@@ -1,8 +1,8 @@
-export * from "./enums";
-export * from "./decoder";
-export * from "./encoder";
-export * from "./formatter";
-export * from "./misc";
-export * as native from "./native";
-export * as util from "./util";
-export * as register from "./register";
+export * from "./enums.js";
+export * from "./decoder.js";
+export * from "./encoder.js";
+export * from "./formatter.js";
+export * from "./misc.js";
+export * as native from "./native.js";
+export * as util from "./util.js";
+export * as register from "./register.js";

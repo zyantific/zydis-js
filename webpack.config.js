@@ -1,5 +1,7 @@
 import path from "path";
 import { fileURLToPath } from "url";
+import ResolveTypeScriptPlugin from "resolve-typescript-plugin";
+
 export default {
 	mode: "production",
 	entry: "./src/index.ts",
@@ -15,16 +17,15 @@ export default {
 				test: /\.ts$/,
 				use: "ts-loader",
 			},
-			{
-				test: /\.wasm$/,
-				type: "asset/inline",
-			},
 		],
 	},
+
 	resolve: {
+		plugins: [new ResolveTypeScriptPlugin()],
+
 		extensions: [".ts", ".js", ".wasm", "..."],
 		alias: {
-			"./zydis": path.resolve(fileURLToPath(import.meta.url), "../dist/zydis.web.js"),
+			"./zydis.js": path.resolve(fileURLToPath(import.meta.url), "../dist/zydis.web.js"),
 		},
 	},
 	experiments: {
