@@ -12,6 +12,6 @@
 		"@types/node": "^18.15.10",
 		"ts-node": "^10.9.1",
 		"typescript": "next",
-		"zydis.js": "^1.0.2"
+		"zydis.js": "latest"
 	}
 }
