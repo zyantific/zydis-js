@@ -1,6 +1,6 @@
 {
 	"name": "zydis.js",
-	"version": "1.0.4",
+	"version": "1.0.6",
 	"description": "Zydis bindings via WebAssembly.",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
@@ -14,7 +14,7 @@
 	"bugs": {
 		"url": "https://github.com/zyantific/zydis-js/issues"
 	},
-	"homepage": "https://github.com/zyantific/zydis-js",
+	"homepage": "https://zydis.re/",
 	"keywords": [
 		"zydis",
 		"x86",
@@ -24,7 +24,8 @@
 		"wasm"
 	],
 	"scripts": {
-		"build": "tsc && emsdk activate && emcmake cmake -B build && cmake --build build && npx webpack"
+		"build": "tsc && emsdk activate && emcmake cmake -B build && cmake --build build -j8 && npx webpack",
+		"build-nix": "tsc && (if [[ $(command -v emsdk) ]]; then emsdk activate; fi) && emcmake cmake -B build && cmake --build build -j8 && npx webpack"
 	},
 	"devDependencies": {
 		"@swc/core": "^1.3.26",
